@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joel’s Launchpad</title>
+  <meta name="description" content="Data-Driven Product Builder | AI-Powered Systems Thinker | AI Generalist" />
+  <link rel="icon" href="assets/avatar.png">
+  <link rel="preload" href="assets/avatar.png" as="image">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light">
+  <header class="site-header">
+    <div class="hero">
+      <img class="avatar" src="assets/avatar.png" alt="Joel avatar" />
+      <div class="hero-text">
+        <h1>Joel’s Launchpad</h1>
+        <p class="tagline">Data-Driven Product Builder | AI-Powered Systems Thinker | AI Generalist</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <button id="modeToggle" class="btn">🌙 Dark</button>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>👋 About Me</h2>
+      <p>
+        I build scalable systems and data-powered products that bridge <b>technology, business, and people</b>.
+        I’m currently pursuing an <b>MS in IT & Management</b> at Illinois Tech (May 2025).
+        My focus areas span <b>SRE</b>, <b>AI agents</b>, <b>data engineering</b>, and <b>product strategy</b>.
+      </p>
+    </section>
+    <hr/>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>🧩 Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>🧠 Product</h3>
+          <ul>
+            <li>Customer Discovery, Roadmap Planning, Competitive Analysis</li>
+            <li>GTM Strategy, OKRs, Feature Prioritization</li>
+            <li>Stakeholder Communication, Program/Project Management</li>
+          </ul>
+        </div>
+        <div>
+          <h3>🤖 AI</h3>
+          <ul>
+            <li>LangChain, ChatGPT API, Pinecone, RAG Systems, Agent Design, LLMOps</li>
+            <li>Prompt Engineering, Workflow Orchestration</li>
+          </ul>
+        </div>
+        <div>
+          <h3>⚙️ SRE</h3>
+          <ul>
+            <li>SLO/SLI, Error Budgets, Incident Response, MTTR Optimization</li>
+            <li>Policy-as-Code (OPA), CI/CD Risk Gates, Canary Deployments</li>
+            <li>Prometheus, Observability</li>
+          </ul>
+        </div>
+        <div>
+          <h3>📊 Data</h3>
+          <ul>
+            <li>Azure ETL (Bronze/Silver/Gold), Data Modeling, PySpark, SQL</li>
+            <li>Power BI, Feature Engineering, scikit-learn</li>
+          </ul>
+        </div>
+        <div class="span-2">
+          <h3>🛠️ Tech Stack</h3>
+          <p>Python, FastAPI, PostgreSQL, Prometheus, Streamlit, Airtable, Softr, Make.com, Slack/Jira/Gmail APIs, GCP, Azure</p>
+        </div>
+      </div>
+    </section>
+    <hr/>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2>💼 Experience</h2>
+      <div class="timeline">
+        <article class="card">
+          <h3>Business Lead — AirEnergy LLC</h3>
+          <p class="meta">Chicago, IL · Aug 2024 – Dec 2024</p>
+          <ul>
+            <li>Led product lifecycle with a team of 6; improved readiness by <b>17%</b>.</li>
+            <li>Presented to executives; secured interest from <b>3 pilot clients</b>.</li>
+            <li>🏆 1st Place — Kaplan Innovation Day (judged by 50+ industry experts).</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Student Co-Founder — RealTrado (AI & Blockchain)</h3>
+          <p class="meta">Chennai, India · Jan 2022 – Feb 2023</p>
+          <ul>
+            <li>Ethereum smart contracts cut fraud <b>30%</b> & costs <b>35%</b>.</li>
+            <li>AI anomaly detection increased adoption by <b>37%</b> (pilot).</li>
+            <li>Led GTM, governance, cryptography, and UX feedback loops.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <hr/>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <h2>🎓 Education</h2>
+      <ul class="edu">
+        <li><b>MS, IT & Management</b> — Illinois Institute of Technology (May 2025)</li>
+        <li><b>BE, Computer Science & Engineering</b> — Panimalar Engineering College (May 2022)</li>
+      </ul>
+    </section>
+    <hr/>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="projects-header">
+        <h2>📌 Projects</h2>
+        <div class="filters">
+          <button class="chip active" data-tag="all">All</button>
+          <button class="chip" data-tag="SRE">SRE</button>
+          <button class="chip" data-tag="AI Agents">AI Agents</button>
+          <button class="chip" data-tag="Data Engineering">Data Engineering</button>
+          <button class="chip" data-tag="Product">Product</button>
+          <button class="chip" data-tag="Machine Learning">Machine Learning</button>
+          <button class="chip" data-tag="Compliance & Risk">Compliance & Risk</button>
+        </div>
+      </div>
+
+      <div id="projectGrid" class="grid">
+        <!-- Cards injected by script.js from the data below -->
+      </div>
+    </section>
+    <hr/>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>📬 Contact</h2>
+      <ul class="contact">
+        <li>📧 <a href="mailto:joelnithishkumar.work@gmail.com">joelnithishkumar.work@gmail.com</a></li>
+        <li>💼 <a href="https://www.linkedin.com/in/joel-nithish-kumar-m-714a75174" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>📂 <a href="https://github.com/JoelNithishKumar" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">© 2025 Joel Nithish Kumar</footer>
+
+  <script>
+    // Project data (edit as needed)
+    window.PROJECTS = [
+      {
+        title: "Multi-Agent GTM Strategy Optimizer",
+        cover: "assets/cover-multi-agent-gtm.png",
+        role: "Product Architect",
+        date: "2023",
+        link: "#",
+        tags: ["Product", "AI Agents", "Machine Learning", "Data Engineering", "Workflow Automation", "Stakeholder Alignment", "Python", "LangChain", "ChatGPT API", "Pinecone", "Streamlit", "Make.com", "Softr"],
+        problem: "GTM research and budget planning were slow and inconsistent across teams.",
+        solution: "Multi-agent system automates competitive analysis, partner sims, budget allocation; auto-OKRs and reports.",
+        tech: "LangChain agents, Pinecone vector DB, Streamlit/Softr UI, Make.com workflows.",
+        impact: ["20% faster planning", "40% better stakeholder alignment", "Faster launch cycles"]
+      },
+      {
+        title: "ProgramOps Co-Pilot (Compliance & Risk Agent)",
+        cover: "assets/cover-programops.png",
+        role: "Lead Developer / PM",
+        date: "2024",
+        link: "#",
+        tags: ["Compliance & Risk", "Program Management", "AI Agents", "Python", "FastAPI", "Pinecone", "Jira API", "Slack API", "Gmail API", "SOC2", "GDPR", "PII", "MTTR Optimization"],
+        problem: "Manual SOC2/GDPR/PII checks across Slack/Jira/Gmail increased audit risk and slowed response.",
+        solution: "6 agents scan artifacts, flag risks, generate evidence bundles and reports.",
+        tech: "FastAPI microservices, Pinecone semantic search, Slack/Jira/Gmail integrations.",
+        impact: ["+35% compliance readiness", "MTTR 3d → 2d", "Lowered legal exposure"]
+      },
+      {
+        title: "SRE Policy Orchestrator (SADG)",
+        cover: "assets/cover-sre-orchestrator.png",
+        role: "Architect",
+        date: "2025",
+        link: "#",
+        tags: ["SRE", "Reliability", "Policy-as-Code", "OPA", "Python", "FastAPI", "PostgreSQL", "Prometheus", "CI/CD", "Canary", "Change Failure Reduction", "MTTR Optimization"],
+        problem: "Releases caused reliability regressions; manual checks delayed deploys and missed risks.",
+        solution: "Policy-gated deploys with risk scoring, SLO drift detection, canary routing, and auto-rollback.",
+        tech: "FastAPI, OPA gatekeeper, Prometheus metrics, Postgres, CI/CD hooks.",
+        impact: ["-38% change failure rate", "-42% incident MTTR", "Approvals 30m → 5m"]
+      },
+      {
+        title: "Azure Yellow Taxi Data ETL",
+        cover: "assets/cover-azure-taxi-etl.png",
+        role: "Data Engineer / PM",
+        date: "2024",
+        link: "#",
+        tags: ["Data Engineering", "Azure", "ETL", "Medallion", "Power BI", "Data Modeling", "Analytics Enablement"],
+        problem: "Dirty, inconsistent data limited BI.",
+        solution: "Medallion pipeline (Bronze→Silver→Gold) with quality checks and curated gold tables.",
+        tech: "Azure Data Factory, Data Lake, Synapse SQL, Power BI.",
+        impact: ["+30% data accuracy", "Best Project among 50+", "Faster analytics & decisions"]
+      },
+      {
+        title: "Uber & Lyft Cab Price Prediction",
+        cover: "assets/cover-cab-pricing-ml.png",
+        role: "ML Engineer / PM",
+        date: "2023",
+        link: "#",
+        tags: ["Machine Learning", "Data Science", "Pricing Optimization", "Python", "scikit-learn", "Pandas"],
+        problem: "Unclear pricing → poor estimates and planning.",
+        solution: "Random Forest model to predict ride fares with engineered features.",
+        tech: "scikit-learn, Pandas; error analysis & feature importance.",
+        impact: ["R² = 0.98", "RMSE: Lyft 1.44 / Uber 2.10", "Better pricing clarity & forecasting"]
+      }
+    ];
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
