@@ -94,3 +94,19 @@ body.dark .tag{background: rgba(255,255,255,.05)}
   max-width:1100px; margin:28px auto 40px; padding:0 20px;
   color: var(--muted); font-size:14px; text-align:center
 }
+
+/* Make project cards look like cards, not links */
+.grid a.project{
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.grid a.project:visited{
+  color: inherit !important;
+}
+.grid a.project *{
+  text-decoration: none !important;
+}
+
+/* Keep the nice hover & cursor */
+.project{ cursor: pointer; }
+.project:hover{ transform: translateY(-4px); box-shadow: 0 16px 44px rgba(0,0,0,0.14) }
