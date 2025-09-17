@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SRE Policy Orchestrator — Joel’s Launchpad</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="light">
+  <header class="site-header">
+    <a href="../index.html" class="btn">← Back to Portfolio</a>
+    <h1>⚙️ SRE Policy Orchestrator (SADG)</h1>
+    <p class="tagline">Multi-Agent Deployment Gatekeeper for Site Reliability Engineering</p>
+  </header>
+
+  <main class="section">
+    <img src="../assets/cover-sre-orchestrator.png" class="project-cover">
+
+    <h2>📌 Project Summary</h2>
+    <p>Built a multi-agent Site Reliability platform (SADG) that blocks risky deployments using policy-as-code, SLO drift detection, and risk scoring — reducing change failure rate by <b>38%</b> and incident MTTR by <b>42%</b>.</p>
+
+    <h2>⚠️ Problem</h2>
+    <p>Frequent production incidents were caused by risky deployments slipping through manual reviews. Approvals took too long but still missed hidden risks.</p>
+
+    <h2>🎯 Objectives</h2>
+    <ul>
+      <li>Automate deployment risk evaluation</li>
+      <li>Integrate SLO monitoring into release pipelines</li>
+      <li>Reduce change failure rate and improve MTTR</li>
+    </ul>
+
+    <h2>⚙️ Solution Architecture</h2>
+    <ul>
+      <li>FastAPI-based gatekeeper service runs pre-deploy checks</li>
+      <li>Risk scoring engine evaluates error budget, MTTR trends, change size, and blast radius</li>
+      <li>OPA Gatekeeper enforces policy-as-code rules</li>
+      <li>Prometheus metrics ingestion for SLO drift and regression alerts</li>
+      <li>PostgreSQL stores change logs and decisions for audit</li>
+    </ul>
+
+    <h2>🧩 Tech Stack</h2>
+    <ul>
+      <li>FastAPI, Python, Uvicorn</li>
+      <li>OPA (Open Policy Agent), Rego policies</li>
+      <li>Prometheus, Alertmanager, Grafana</li>
+      <li>PostgreSQL</li>
+      <li>Docker, GitHub Actions (CI/CD)</li>
+    </ul>
+
+    <h2>⚡ Key Features</h2>
+    <ul>
+      <li>Policy-as-code based deployment gates</li>
+      <li>Canary release routing for medium-risk changes</li>
+      <li>Automatic rollback triggers when SLO violations detected</li>
+      <li>Live risk scoring in PR CI pipeline</li>
+    </ul>
+
+    <h2>📈 Results & Impact</h2>
+    <ul>
+      <li>Change failure rate ↓ <b>38%</b></li>
+      <li>MTTR ↓ <b>42%</b></li>
+      <li>Release approvals cut from 30 min → 5 min</li>
+      <li>Achieved 95% decision accuracy vs. manual SRE reviews</li>
+    </ul>
+
+    <h2>📌 My Role</h2>
+    <p>Product Architect — designed policies, risk scoring engine, built FastAPI microservices, integrated with CI/CD, and led reliability reviews.</p>
+  </main>
+
+  <footer class="site-footer">© 2025 Joel Nithish Kumar</footer>
+</body>
+</html>

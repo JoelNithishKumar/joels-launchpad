@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ProgramOps Co-Pilot — Joel’s Launchpad</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="light">
+  <header class="site-header">
+    <a href="../index.html" class="btn">← Back to Portfolio</a>
+    <h1>🛡️ ProgramOps Co-Pilot</h1>
+    <p class="tagline">AI-Driven Compliance & Risk Tracking for Engineering Operations</p>
+  </header>
+
+  <main class="section">
+    <img src="../assets/cover-programops.png" class="project-cover">
+
+    <h2>📌 Project Summary</h2>
+    <p>Designed and implemented an AI-driven ProgramOps Co-Pilot to automate SOC2/GDPR/PII compliance checks across Slack, Jira, and Gmail — improving compliance readiness by <b>35%</b> and reducing MTTR from <b>3 days to 2 days</b>.</p>
+
+    <h2>⚠️ Problem</h2>
+    <p>Engineering teams struggled with fragmented compliance workflows: risk checks were manual, evidence was scattered across tools, and audits created recurring delays.</p>
+
+    <h2>🎯 Objectives</h2>
+    <ul>
+      <li>Automate compliance artifact collection and risk flagging</li>
+      <li>Map dependencies between incidents, services, and controls</li>
+      <li>Reduce MTTR by surfacing risks early</li>
+      <li>Generate audit-ready evidence bundles automatically</li>
+    </ul>
+
+    <h2>⚙️ Solution Architecture</h2>
+    <ul>
+      <li>Orchestrated <b>6 specialized agents</b>: Compliance, Dependency, Evaluation, Governance, Ingestion, Reporting</li>
+      <li>FastAPI microservices for modular pipelines</li>
+      <li>Pinecone semantic search to identify SOC2/GDPR/PII references</li>
+      <li>Slack, Jira, and Gmail API connectors for ingestion</li>
+      <li>Evidence bundles exported to GCS and surfaced in dashboards</li>
+    </ul>
+
+    <h2>🧩 Tech Stack</h2>
+    <ul>
+      <li><b>Backend:</b> Python, FastAPI, Uvicorn</li>
+      <li><b>AI:</b> LangChain, OpenAI GPT API, Pinecone (semantic search)</li>
+      <li><b>APIs:</b> Slack API, Jira API, Gmail API</li>
+      <li><b>Infra:</b> Docker, Google Cloud Storage</li>
+      <li><b>Monitoring:</b> Prometheus + Grafana dashboards for MTTR/SLO metrics</li>
+    </ul>
+
+    <h2>⚡ Key Features</h2>
+    <ul>
+      <li>Real-time ingestion of compliance-related messages and tickets</li>
+      <li>Risk tagging using semantic + regex pattern matching</li>
+      <li>Dependency graph of controls and incidents for root cause tracing</li>
+      <li>Evidence package generation and delivery to auditors</li>
+    </ul>
+
+    <h2>🛠️ Implementation Details</h2>
+    <ul>
+      <li>Each agent has its own FastAPI service and message queue</li>
+      <li>Semantic retrieval over 200+ internal policy docs</li>
+      <li>Automated reports as PDF + CSV through Make.com workflows</li>
+      <li>CI pipeline: pytest + GitHub Actions + Docker build/push</li>
+    </ul>
+
+    <h2>📈 Results & Impact</h2>
+    <ul>
+      <li>Compliance readiness up by <b>35%</b></li>
+      <li>MTTR reduced from <b>3 days → 2 days</b></li>
+      <li>Significantly reduced audit preparation effort and legal risk</li>
+    </ul>
+
+    <h2>📌 My Role</h2>
+    <p>Product & Tech Lead — defined risk taxonomy, designed agent architecture, implemented pipelines, and demoed to security/legal teams.</p>
+
+    <h2>🚀 Future Improvements</h2>
+    <ul>
+      <li>Integrate SOC2 Type II automated evidence checks</li>
+      <li>Add risk scoring models using incident severity and frequency</li>
+      <li>Build user-facing compliance health dashboards</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">© 2025 Joel Nithish Kumar</footer>
+</body>
+</html>

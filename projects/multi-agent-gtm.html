@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Multi-Agent GTM Strategy Optimizer — Joel’s Launchpad</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="light">
+  <header class="site-header">
+    <a href="../index.html" class="btn">← Back to Portfolio</a>
+    <h1>🧠 Multi-Agent GTM Strategy Optimizer</h1>
+    <p class="tagline">Automating Competitive Research, Budget Planning & OKR Generation</p>
+  </header>
+
+  <main class="section">
+    <img src="../assets/cover-multi-agent-gtm.png" class="project-cover">
+
+    <h2>📌 Project Summary</h2>
+    <p>Built a multi-agent AI system to automate competitive analysis, partner simulations, budget allocation, and OKR generation — improving GTM planning efficiency by <b>20%</b> and stakeholder alignment by <b>40%</b>.</p>
+
+    <h2>⚠️ Problem</h2>
+    <p>GTM planning was fragmented: competitive research, budget allocations, and partner strategy were done manually, taking weeks and producing inconsistent results across teams.</p>
+
+    <h2>🎯 Objectives</h2>
+    <ul>
+      <li>Accelerate GTM planning cycles from weeks to days</li>
+      <li>Centralize competitive and partner intelligence</li>
+      <li>Enable quick scenario simulations for budget decisions</li>
+      <li>Automatically produce OKRs and stakeholder reports</li>
+    </ul>
+
+    <h2>⚙️ Solution Architecture</h2>
+    <ul>
+      <li>LangChain-powered multi-agent framework with 4 agents: Market Analyst, Partner Analyst, Budget Planner, OKR Generator</li>
+      <li>Pinecone vector database for competitive intel embeddings</li>
+      <li>Streamlit UI for scenario inputs and report generation</li>
+      <li>Make.com workflow automation for exporting PDFs and updating Softr dashboards</li>
+    </ul>
+
+    <h2>🧩 Tech Stack</h2>
+    <ul>
+      <li><b>AI/ML:</b> LangChain, OpenAI GPT API</li>
+      <li><b>Database:</b> Pinecone (semantic search)</li>
+      <li><b>Frontend:</b> Streamlit, Softr (no-code UI)</li>
+      <li><b>Automation:</b> Make.com</li>
+      <li><b>Infra:</b> Google Cloud Functions (for scheduled agents)</li>
+    </ul>
+
+    <h2>⚡ Key Features</h2>
+    <ul>
+      <li>Auto-ingests competitor reports and investor decks into Pinecone</li>
+      <li>Generates SWOTs, pricing comparisons, and market maps</li>
+      <li>Simulates budget allocation across GTM channels</li>
+      <li>Exports OKRs and slides for stakeholder reviews</li>
+    </ul>
+
+    <h2>🛠️ Implementation Details</h2>
+    <ul>
+      <li>LangChain Agents with custom tools (WebSearchTool, BudgetSimTool, OKRWriterTool)</li>
+      <li>Prompt chaining with memory for contextual planning</li>
+      <li>Semantic search over 50+ competitive docs using Pinecone</li>
+      <li>CSV export → Make.com → automated dashboard updates on Softr</li>
+    </ul>
+
+    <h2>📈 Results & Impact</h2>
+    <ul>
+      <li>Planning time reduced by <b>~20%</b></li>
+      <li>Stakeholder alignment scores up by <b>40%</b></li>
+      <li>Improved budget allocation confidence from 60% → 85%</li>
+    </ul>
+
+    <h2>📌 My Role</h2>
+    <p>Product Architect — defined roadmap, designed the multi-agent system, built the LangChain pipeline, created the UI and workflows, and led stakeholder reviews.</p>
+
+    <h2>🚀 Future Improvements</h2>
+    <ul>
+      <li>Integrate real-time market feeds (Crunchbase, CBInsights)</li>
+      <li>Add reinforcement learning for budget optimization</li>
+      <li>Multi-user collaboration with role-based access</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">© 2025 Joel Nithish Kumar</footer>
+</body>
+</html>
